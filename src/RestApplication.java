@@ -1,4 +1,5 @@
 import easy.palindromeNumber;
+import easy.romanToInteger;
 import easy.runningSum1dArray;
 
 public class RestApplication {
@@ -11,5 +12,9 @@ public class RestApplication {
         int number = 12221;
         palindromeNumber isPalindrome = new palindromeNumber();
         isPalindrome.isPalindrome(number);
+
+        String roman = "MCMXCIV";
+        romanToInteger romanToInteger = new romanToInteger();
+        romanToInteger.romanToInt(roman);
     }
 }
