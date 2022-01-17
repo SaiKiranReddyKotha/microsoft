@@ -1,3 +1,4 @@
+import easy.longestCommonPrefix;
 import easy.palindromeNumber;
 import easy.romanToInteger;
 import easy.runningSum1dArray;
@@ -16,5 +17,9 @@ public class RestApplication {
         String roman = "MCMXCIV";
         romanToInteger romanToInteger = new romanToInteger();
         romanToInteger.romanToInt(roman);
+
+        String[] str = {"flower","flow","flight"};
+        longestCommonPrefix longestCommonPrefix = new longestCommonPrefix();
+        System.out.println(longestCommonPrefix.longestCommonPrefix(str));
     }
 }
