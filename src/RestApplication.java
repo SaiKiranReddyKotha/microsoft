@@ -1,7 +1,4 @@
-import easy.longestCommonPrefix;
-import easy.palindromeNumber;
-import easy.romanToInteger;
-import easy.runningSum1dArray;
+import easy.*;
 
 public class RestApplication {
     public static void main(String[] args){
@@ -21,5 +18,9 @@ public class RestApplication {
         String[] str = {"flower","flow","flight"};
         longestCommonPrefix longestCommonPrefix = new longestCommonPrefix();
         System.out.println(longestCommonPrefix.longestCommonPrefix(str));
+
+        String s = "({[])";
+        validParentheses validParentheses = new validParentheses();
+        System.out.println(validParentheses.isValidParentheses(s));
     }
 }
